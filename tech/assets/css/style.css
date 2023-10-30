@@ -1,0 +1,28 @@
+/* Estilos personalizados */
+#mobile-menu {
+  position: fixed;
+  top: 65px;
+  bottom: 0;
+  width: 100%;
+  z-index: 100;
+  padding: 2rem;
+  background-color: #1a202c;
+  transition: transform 0.3s ease-in-out;
+}
+
+#mobile-menu.hidden {
+  transform: translateX(-100%);
+}
+
+.service:hover {
+  transform: scale(1.03);
+  transition: 0.3s;
+}
+.portfolio:hover {
+  transform: scale(1.03);
+  transition: 0.3s;
+}
+
+.service, h3 {
+  color: #ea580c;
+}

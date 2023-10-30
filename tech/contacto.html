@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="./assets/js/tailwind.config.js"></script>
+  <!-- FontAwesome -->
+  <link rel="stylesheet" href="https://kit.fontawesome.com/9d60ee0290.css" crossorigin="anonymous">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <title>Contacto</title>
+</head>
+
+<body class="bg-gray-200 font-sans">
+  <main>
+    <!-- Menu -->
+    <nav class="bg-white shadow-lg fixed w-full text-black p-4 z-50">
+      <div class="container mx-auto flex justify-between items-center">
+        <h1 class="text-black text-2xl font-semibold"><a href="index.html">TechSolutions Innovations Inc</a></h1>
+        </button>
+        <ul class="hidden md:flex space-x-6 items-center">
+          <li><a class="text-black hover:text-amber-600 hover:font-semibold" href="contacto.html">Contacto</a></li>
+          <li><a class="text-black hover:text-amber-600 hover:font-semibold" href="noticias.html">Noticias</a></li>
+          <li><a class="text-black hover:text-amber-600 hover:font-semibold" href="precios.html">Precios</a></li>
+          <li><a class="text-black hover:text-amber-600 hover:font-semibold" href="recursos.html">Recursos</a></li>
+          <li><a class="text-black hover:text-amber-600 hover:font-semibold" href="preguntas_frecuentes.html">Preguntas
+              Frecuentes</a></li>
+        </ul>
+      </div>
+    </nav>
+    <!-- Contacto -->
+    <section class="container mx-auto p-8 py-20">
+      <h2 class="text-3xl font-semibold text-center mb-6 pt-6">¡Contáctanos!</h2>
+      <form action="contacto.php" method="post" class="bg-white shadow-lg rounded-lg p-6 mx-auto max-w-md">
+        <div class="mb-4">
+          <label for="nombre" class="text-slate-700 text-lg font-semibold mb-2 block">Nombre:</label>
+          <input type="text" id="nombre" name="nombre" required
+            class="w-full border rounded py-2 px-3 text-gray-700 focus:outline-none focus:ring focus:border-blue-300">
+        </div>
+        <div class="mb-4">
+          <label for="correo" class="text-slate-700 text-lg font-semibold mb-2 block">Correo Electrónico:</label>
+          <input type="email" id="correo" name="correo" required
+            class="w-full border rounded py-2 px-3 text-gray-700 focus:outline-none focus:ring focus:border-blue-300">
+        </div>
+        <div class="mb-4">
+          <label for="mensaje" class="text-slate-700 text-lg font-semibold mb-2 block">Asunto:</label>
+          <textarea id="mensaje" name="mensaje" rows="4" required
+            class="w-full border rounded py-2 px-3 text-gray-700 focus:outline-none focus:ring focus:border-blue-300"></textarea>
+        </div>
+        <div class="text-center">
+          <button type="submit"
+            class="bg-blue-500 hover:bg-blue-700 text-white font-semibold py-2 px-4 rounded-full focus:outline-none focus:ring focus:border-blue-300">
+            Enviar Mensaje
+          </button>
+        </div>
+      </form>
+    </section>
+  </main>
+  <script src="https://kit.fontawesome.com/9d60ee0290.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
